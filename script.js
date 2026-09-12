@@ -62,8 +62,6 @@ window.addEventListener("scroll", () => {
     requestAnimationFrame(() => {
       const max = document.documentElement.scrollHeight - innerHeight;
       const p = max ? scrollY / max : 0;
-      ball.style.setProperty("--scroll-y", `${p * 180}px`);
-      ball.style.setProperty("--scroll-r", `${p * 720}deg`);
       ticking = false;
     });
     ticking = true;
