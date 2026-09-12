@@ -1,28 +1,19 @@
-# Naman Agrawal — The Engineering Innings (v2)
+# Naman Agrawal — Cricket Portfolio V5
 
-A self-contained cricket-inspired portfolio with a premium night-stadium broadcast aesthetic.
+A complete cricket-centric redesign for GitHub Pages.
 
-## What's new in v2
-- Full-screen night-stadium hero with CSS-built floodlights, stands, pitch, creases and wickets.
-- Live broadcast header and scorecard UI.
-- Auto-rotating scorecard highlighting current role and verified career impact metrics.
-- Animated cricket ball travelling across the hero.
-- Scroll-aware ball motion and reveal animations.
-- Responsive mobile layout.
-- Reduced-motion accessibility support.
-- No JS frameworks or image assets required.
+## Structure
+- `index.html` — portfolio content and information architecture
+- `style.css` — responsive visual system
+- `script.js` — active navigation and light reveal effects
+- `assets/rohit-t20-2024.png` — user-supplied Rohit Sharma image used as the full-page watermark
 
-## Files
-- `index.html`
-- `style.css`
-- `script.js`
+## Deploy
+1. Upload the contents of this folder to your GitHub Pages repository.
+2. Keep the `assets` folder beside `index.html`.
+3. Open the GitHub Pages URL.
 
-## Run
-Open `index.html` directly in a browser, or serve the folder with any static HTTP server.
+No build step is required. This is plain HTML/CSS/JS.
 
 ## Notes
-All professional facts and metrics used in the portfolio are based on the supplied resume. Cricket language is used as the visual/metaphorical design system rather than as literal match statistics.
-
-
-## V3 stability pass
-This version removes browser-sensitive transform interactions, tightens viewport sizing, prevents horizontal overflow, and makes the hero/grid sizing more robust on GitHub Pages.
+The portfolio content is based on the supplied 2026 resume. The Rohit image is the image supplied by the site owner in the conversation.
