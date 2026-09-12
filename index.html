@@ -3,247 +3,189 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07110d">
-  <meta name="description" content="Naman Agrawal — Backend Engineer, AdTech, and cricket enthusiast.">
-  <title>Naman Agrawal — The Engineering Innings</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#062b20">
+  <meta name="description" content="Naman Agrawal — Backend Engineer, AdTech. A cricket-centric engineering portfolio.">
+  <title>Naman Agrawal — Not Out</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
+  <div class="stadium-bg" aria-hidden="true"></div>
+  <div class="rohit-watermark" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
 
-  <header class="broadcast-bar">
-    <div class="live"><span></span> LIVE</div>
-    <div class="broadcast-title">ENGINEERING INNINGS</div>
-    <div class="broadcast-meta">GURUGRAM&nbsp;&nbsp;•&nbsp;&nbsp;NYKAA&nbsp;&nbsp;•&nbsp;&nbsp;SDE-2</div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Naman Agrawal home">
+      <span class="brand-mark">NA</span>
+      <span>
+        <strong>NAMAN AGRAWAL</strong>
+        <small>ENGINEER · PROBLEM SOLVER · CRICKET ENTHUSIAST</small>
+      </span>
+    </a>
+    <nav class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#innings">Innings</a>
+      <a href="#playing-xi">Playing XI</a>
+      <a href="#scoreboard">Scoreboard</a>
+      <a href="#dugout">Dugout</a>
+      <a href="#next-innings">Next Innings</a>
+    </nav>
+    <a class="outline-btn small" href="mailto:1110naman@gmail.com">Get in Touch</a>
   </header>
 
-  <nav class="nav">
-    <a class="brand" href="#top">NA<span>.</span></a>
-    <div class="nav-links">
-      <a href="#career">Career</a>
-      <a href="#work">Key Innings</a>
-      <a href="#stack">Playing XI</a>
-      <a href="#highlights">Highlights</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+  <aside class="side-nav">
+    <a class="side-link active" href="#home"><b>01</b><span>PLAYER PROFILE</span></a>
+    <a class="side-link" href="#innings"><b>02</b><span>INNINGS</span></a>
+    <a class="side-link" href="#playing-xi"><b>03</b><span>PLAYING XI</span></a>
+    <a class="side-link" href="#key-overs"><b>04</b><span>KEY OVERS</span></a>
+    <a class="side-link" href="#scoreboard"><b>05</b><span>SCOREBOARD</span></a>
+    <a class="side-link" href="#honours"><b>06</b><span>MATCH HONOURS</span></a>
+    <a class="side-link" href="#dugout"><b>07</b><span>BEYOND THE CREASE</span></a>
+    <a class="side-link" href="#next-innings"><b>08</b><span>NEXT INNINGS</span></a>
+    <div class="side-motto">SAME GAME<br>BIGGER GOALS<span></span></div>
+  </aside>
 
-  <main id="top">
-    <section class="hero">
-      <div class="stadium" aria-hidden="true">
-        <div class="stars"></div>
-        <div class="stands stand-a"></div>
-        <div class="stands stand-b"></div>
-        <div class="floodlight beam-a"></div>
-        <div class="floodlight beam-b"></div>
-        <div class="floodlight beam-c"></div>
-        <div class="field-glow"></div>
-        <div class="boundary"></div>
-        <div class="pitch">
-          <div class="pitch-strip"></div>
-          <div class="crease crease-top"></div>
-          <div class="crease crease-bottom"></div>
-          <div class="wickets wickets-top"><i></i><i></i><i></i></div>
-          <div class="wickets wickets-bottom"><i></i><i></i><i></i></div>
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">FROM CODE TO IMPACT</p>
+        <h1>NAMAN<br>AGRAWAL</h1>
+        <div class="hero-role">BACKEND ENGINEER <i>•</i> ADTECH <i>•</i> <em>NOT OUT</em></div>
+        <p class="hero-lede">Building scalable systems, solving complex problems,<br class="desktop"> and contributing to products that reach millions —<br class="desktop"> on and off the field.</p>
+        <div class="hero-actions">
+          <a class="lime-btn" href="#scoreboard">View Scorecard ↓</a>
+          <a class="outline-btn" href="mailto:1110naman@gmail.com">Get in Touch</a>
         </div>
       </div>
-
-      <div class="hero-grid">
-        <div class="hero-kicker">
-          <span>PLAYER SCORECARD</span>
-          <span class="kicker-rule"></span>
-          <span>2023 → PRESENT</span>
-        </div>
-
-        <div class="hero-copy">
-          <p class="eyebrow">BACKEND ENGINEER&nbsp; / &nbsp;ADTECH</p>
-          <h1>NAMAN<br><em>AGRAWAL</em></h1>
-          <p class="hero-line">Building systems that stay at the crease<br>when the traffic gets heavy.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#career">View the innings <span>↘</span></a>
-            <a class="btn btn-ghost" href="mailto:1110naman@gmail.com">Talk to me</a>
-          </div>
-        </div>
-
-        <aside class="live-card" aria-label="Live career scorecard">
-          <div class="card-head">
-            <span>LIVE SCORECARD</span>
-            <span id="cardCounter">01 / 05</span>
-          </div>
-          <div class="score-card">
-            <div class="score-label" id="scoreLabel">CURRENT INNINGS</div>
-            <div class="score-value" id="scoreValue">SDE-2</div>
-            <div class="score-sub" id="scoreSub">Backend · AdTech · Nykaa</div>
-            <div class="card-progress"><span id="cardProgress"></span></div>
-          </div>
-          <div class="score-controls">
-            <button id="prevCard" aria-label="Previous scorecard">←</button>
-            <div class="dots" id="dots"></div>
-            <button id="nextCard" aria-label="Next scorecard">→</button>
-          </div>
-        </aside>
-
-        <div class="hero-footer">
-          <span>NOT OUT</span>
-          <span class="footer-dot"></span>
-          <span>BACKEND / DISTRIBUTED SYSTEMS / OBSERVABILITY</span>
-        </div>
-      </div>
-
-      <div class="ball" aria-hidden="true"><span class="seam"></span></div>
-      <div class="scroll-cue"><span></span> SCROLL TO FOLLOW THE BALL</div>
+      <div class="hero-callout"><span></span><strong>DISCIPLINE<br>FOCUS<br>BETTER<br>EVERY DAY</strong></div>
     </section>
 
-    <section class="section commentary" id="career">
-      <div class="section-tag">01 / COMMENTARY</div>
-      <div class="section-head">
-        <h2>READ THE GAME.<br><em>PLAY THE SITUATION.</em></h2>
-        <p>A backend engineer building high-throughput AdTech systems at Nykaa, with a bias for ownership, reliability and measurable impact.</p>
+    <section class="current-card reveal">
+      <div>
+        <span class="label">CURRENT INNINGS</span>
+        <strong>Software Development Engineer (SDE-2)</strong>
+        <small>Backend · AdTech Team · Nykaa</small>
       </div>
-      <div class="commentary-grid">
-        <div class="commentary-card">
-          <span class="quote-mark">“</span>
-          <p>Cricket teaches the same lesson as distributed systems: read the conditions, understand the situation, and make the next decision count.</p>
-          <span class="signature">— THE ENGINEERING INNINGS</span>
-        </div>
-        <div class="career-table">
-          <div class="table-row table-label"><span>INNINGS</span><span>TEAM</span><span>ROLE</span><span>PERIOD</span></div>
-          <div class="table-row"><span>02</span><span>NYKAA</span><span>SDE-2 · AdTech</span><span>Apr 2026 →</span></div>
-          <div class="table-row"><span>01</span><span>NYKAA</span><span>SDE-1 · AdTech</span><span>Jul 2023 → Mar 2026</span></div>
-          <div class="table-row"><span>FOUNDATION</span><span>NSUT</span><span>B.Tech · Electrical</span><span>2019 → 2023</span></div>
-        </div>
-      </div>
+      <div class="score-stat"><span>OVERS</span><strong>3+ YRS</strong></div>
+      <div class="score-stat"><span>RUNS</span><strong class="lime-text">IMPACT</strong></div>
+      <div class="score-stat"><span>STRIKE RATE</span><strong>HIGH</strong></div>
+      <div class="score-stat"><span>STATUS</span><strong class="lime-text">NOT OUT</strong></div>
     </section>
 
-    <section class="section dark-section" id="work">
-      <div class="section-tag">02 / KEY INNINGS</div>
-      <div class="section-head">
-        <h2>IMPACT<br><em>UNDER PRESSURE.</em></h2>
-        <p>Selected engineering innings from campaign platforms, ad serving, async workflows, observability and automation.</p>
-      </div>
-      <div class="innings-grid">
-        <article class="innings-card featured">
-          <div class="inning-no">INNING 01</div>
-          <h3>Audience Targeting<br>& Banner Ad Serving</h3>
-          <p>Engineered audience-targeted banner ad serving workflows using user segmentation and targeting rules for personalized delivery across high-traffic journeys.</p>
-          <div class="card-foot"><span>ADTECH</span><span>SCALABILITY</span></div>
+    <section id="innings" class="section content-section">
+      <div class="section-heading"><span>02</span><div><p class="eyebrow">MY JOURNEY SO FAR</p><h2>INNINGS</h2></div></div>
+      <div class="card-grid three">
+        <article class="stat-card dark">
+          <span class="icon">◒</span><p class="eyebrow">PROFESSIONAL INNINGS</p><strong>3+</strong><small>YEARS AT THE CREASE</small><p>From SDE-1 to SDE-2, building backend systems for AdTech at scale.</p>
         </article>
-        <article class="innings-card">
-          <div class="inning-no">INNING 02</div>
+        <article class="stat-card dark">
+          <span class="icon">◎</span><p class="eyebrow">CURRENT ROLE</p><strong>SDE-2</strong><small>BACKEND · ADTECH</small><p>Audience targeting, bidding, keyword targeting and PLA recommendations.</p>
+        </article>
+        <article class="stat-card dark">
+          <span class="icon">↗</span><p class="eyebrow">PRODUCTION REACH</p><strong>Millions</strong><small>MONTHLY AD REQUESTS</small><p>High-throughput RESTful microservices serving banner and PLA journeys.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="playing-xi" class="section content-section">
+      <div class="section-heading"><span>03</span><div><p class="eyebrow">THE TEAM I TAKE TO THE MIDDLE</p><h2>PLAYING XI</h2></div></div>
+      <div class="xi-board">
+        <div class="xi-intro">
+          <p class="eyebrow">CORE SKILLS</p>
+          <h3>A balanced XI for<br>reliable delivery.</h3>
+          <p>Engineering strengths mapped like a cricket squad: a strong opening pair, dependable middle order, and specialist bowling when production gets tough.</p>
+        </div>
+        <div class="xi-list">
+          <div><b>01</b><span>Python</span><small>OPENING BAT</small></div>
+          <div><b>02</b><span>C++</span><small>OPENING BAT</small></div>
+          <div><b>03</b><span>Microservices</span><small>ALL-ROUNDER</small></div>
+          <div><b>04</b><span>Distributed Systems</span><small>ALL-ROUNDER</small></div>
+          <div><b>05</b><span>AWS</span><small>PACE</small></div>
+          <div><b>06</b><span>Databricks</span><small>SPIN</small></div>
+          <div><b>07</b><span>MongoDB</span><small>WICKETKEEPER</small></div>
+          <div><b>08</b><span>SQS</span><small>FINISHER</small></div>
+          <div><b>09</b><span>Grafana</span><small>FIELDING</small></div>
+          <div><b>10</b><span>Kibana</span><small>FIELDING</small></div>
+          <div><b>11</b><span>Observability</span><small>CAPTAINCY</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="key-overs" class="section content-section">
+      <div class="section-heading"><span>04</span><div><p class="eyebrow">SELECTED CONTRIBUTIONS</p><h2>KEY OVERS</h2></div></div>
+      <div class="card-grid three">
+        <article class="project-card">
+          <div class="project-top"><span>OVER 01</span><b>AD SERVING</b></div>
+          <h3>Audience Targeting</h3>
+          <p>Engineered audience-targeted banner ad serving workflows using segmentation and targeting rules for personalized delivery.</p>
+          <div class="tag-row"><span>AdTech</span><span>Backend</span><span>Targeting</span></div>
+        </article>
+        <article class="project-card">
+          <div class="project-top"><span>OVER 02</span><b>PLATFORM</b></div>
           <h3>Campaign Manager</h3>
-          <p>Built backend capabilities supporting ad operations for 1000+ brand managers across campaign and inventory workflows.</p>
-          <div class="metric">1000+ <small>USERS</small></div>
+          <p>Built and scaled campaign operations supporting <strong>1000+ brand managers</strong> across campaign and inventory workflows.</p>
+          <div class="tag-row"><span>REST</span><span>Microservices</span><span>AWS</span></div>
         </article>
-        <article class="innings-card">
-          <div class="inning-no">INNING 03</div>
-          <h3>Async Notifications</h3>
-          <p>Designed AWS SQS-based asynchronous notification systems to make campaign deployment workflows more resilient.</p>
-          <div class="metric">60% <small>FEWER FAILURES</small></div>
-        </article>
-        <article class="innings-card">
-          <div class="inning-no">INNING 04</div>
-          <h3>Inventory Automation</h3>
-          <p>Automated pricing and product onboarding workflows, cutting repetitive operational work and improving consistency.</p>
-          <div class="metric">50% <small>LESS MANUAL EFFORT</small></div>
-        </article>
-        <article class="innings-card">
-          <div class="inning-no">INNING 05</div>
-          <h3>Production Observability</h3>
-          <p>Improved incident management with Grafana, Kibana and NewRelic, and built AI-powered RCA agents using Databricks Genie.</p>
-          <div class="metric">40% <small>MTTD + MTTR</small></div>
-        </article>
-        <article class="innings-card">
-          <div class="inning-no">INNING 06</div>
-          <h3>PLA & Microservices</h3>
-          <p>Developed RESTful microservices handling millions of monthly Banner and PLA ad requests with secure, low-latency communication.</p>
-          <div class="card-foot"><span>REST</span><span>MICROSERVICES</span></div>
+        <article class="project-card">
+          <div class="project-top"><span>OVER 03</span><b>OBSERVABILITY</b></div>
+          <h3>AI-Powered RCA</h3>
+          <p>Developing Databricks Genie agents to automate root-cause analysis for production alerts and failed jobs.</p>
+          <div class="tag-row"><span>GenAI</span><span>Databricks</span><span>RCA</span></div>
         </article>
       </div>
     </section>
 
-    <section class="section stack-section" id="stack">
-      <div class="section-tag">03 / PLAYING XI</div>
-      <div class="section-head">
-        <h2>THE<br><em>TECHNICAL XI.</em></h2>
-        <p>The tools and concepts I take to the crease when the problem is bigger than a single service.</p>
-      </div>
-      <div class="xi">
-        <div class="xi-row"><span class="position">01</span><strong>PYTHON</strong><small>LANGUAGE</small></div>
-        <div class="xi-row"><span class="position">02</span><strong>C++ / C</strong><small>LANGUAGES</small></div>
-        <div class="xi-row"><span class="position">03</span><strong>SQL</strong><small>DATA</small></div>
-        <div class="xi-row"><span class="position">04</span><strong>AWS</strong><small>CLOUD</small></div>
-        <div class="xi-row"><span class="position">05</span><strong>FLASK</strong><small>FRAMEWORK</small></div>
-        <div class="xi-row"><span class="position">06</span><strong>MONGODB</strong><small>DATABASE</small></div>
-        <div class="xi-row"><span class="position">07</span><strong>SQS</strong><small>ASYNC</small></div>
-        <div class="xi-row"><span class="position">08</span><strong>GRAFANA / KIBANA</strong><small>OBSERVABILITY</small></div>
-        <div class="xi-row"><span class="position">09</span><strong>DATABRICKS</strong><small>AI / DATA</small></div>
-        <div class="xi-row"><span class="position">10</span><strong>JENKINS</strong><small>DELIVERY</small></div>
-        <div class="xi-row"><span class="position">11</span><strong>MICROSERVICES</strong><small>ARCHITECTURE</small></div>
-      </div>
-      <div class="concept-strip">DISTRIBUTED SYSTEMS&nbsp;&nbsp;•&nbsp;&nbsp;BACKEND DEVELOPMENT&nbsp;&nbsp;•&nbsp;&nbsp;MONITORING&nbsp;&nbsp;•&nbsp;&nbsp;OBSERVABILITY&nbsp;&nbsp;•&nbsp;&nbsp;ADTECH</div>
-    </section>
-
-    <section class="section highlight-section" id="highlights">
-      <div class="section-tag">04 / MATCH HIGHLIGHTS</div>
-      <div class="highlight-grid">
-        <div class="big-stat"><strong data-count="40">0</strong><span>%</span><small>MTTD + MTTR<br>REDUCTION</small></div>
-        <div class="big-stat"><strong data-count="30">0</strong><span>%</span><small>FASTER<br>CAMPAIGN LAUNCH</small></div>
-        <div class="big-stat"><strong data-count="35">0</strong><span>%</span><small>FEWER<br>OPERATIONAL ERRORS</small></div>
-        <div class="big-stat"><strong>1K+</strong><small>BRAND MANAGERS<br>SUPPORTED</small></div>
-      </div>
-      <div class="trophies">
-        <div><span>2025</span><strong>GAME CHANGER AWARD</strong><small>NYKAA TECH</small></div>
-        <div><span>2024</span><strong>COLLABORATION CHAMPIONS</strong><small>NYKAA TECH</small></div>
-        <div><span>2022</span><strong>TOP 5% · JUMPSTART HACKATHON</strong><small>PUBLICIS SAPIENT</small></div>
-        <div><span>STATE MERIT #4</span><strong>SECONDARY SCHOOL EXAMINATION</strong><small>15 LAKH+ STUDENTS</small></div>
+    <section id="scoreboard" class="section content-section">
+      <div class="section-heading"><span>05</span><div><p class="eyebrow">PERFORMANCE METRICS</p><h2>SCOREBOARD</h2></div></div>
+      <div class="scoreboard">
+        <div class="score-head"><span>METRIC</span><span>RESULT</span><span>INNINGS NOTE</span></div>
+        <div class="score-row"><span>MTTD + MTTR</span><strong>↓ 40%</strong><em>Sharper fielding & incident response</em></div>
+        <div class="score-row"><span>Campaign Launch Time</span><strong>↓ 30%</strong><em>Faster time from setup to delivery</em></div>
+        <div class="score-row"><span>Notification Failures</span><strong>↓ 60%</strong><em>Async SQS architecture</em></div>
+        <div class="score-row"><span>Manual Inventory Effort</span><strong>↓ 50%</strong><em>Pricing & onboarding automation</em></div>
+        <div class="score-row"><span>Operational Errors</span><strong>↓ 35%</strong><em>Real-time validation + access control</em></div>
       </div>
     </section>
 
-    <section class="section foundation">
-      <div class="foundation-card">
+    <section id="honours" class="section content-section cream-section">
+      <div class="section-heading"><span>06</span><div><p class="eyebrow">RECOGNITION & MILESTONES</p><h2>MATCH HONOURS</h2></div></div>
+      <div class="honours-grid">
+        <article><span>2025</span><h3>Game Changer Award</h3><p>One Nykaa Tech All Hands</p></article>
+        <article><span>2024</span><h3>Collaboration Champions</h3><p>Nykaa Tech · AdTech Team</p></article>
+        <article><span>TOP 5%</span><h3>Jumpstart 2022</h3><p>Publicis Sapient Hackathon</p></article>
+        <article><span>RANK 4</span><h3>State Merit</h3><p>Secondary School Examination · 15 lakh+ students</p></article>
+      </div>
+    </section>
+
+    <section id="dugout" class="section content-section">
+      <div class="section-heading"><span>07</span><div><p class="eyebrow">THE PERSON BEYOND THE CODE</p><h2>BEYOND THE CREASE</h2></div></div>
+      <div class="dugout">
+        <div class="quote-mark">“</div>
         <div>
-          <div class="section-tag">05 / FOUNDATIONS</div>
-          <h2>NSUT<br><em>2019 — 2023</em></h2>
+          <h3>The same mindset that helps me in cricket helps me in engineering.</h3>
+          <p>Patience, strategy and the belief that a better tomorrow is always possible. Outside the code, the interests that keep the innings balanced are <strong>sports, technology and travel.</strong></p>
         </div>
-        <div class="foundation-detail">
-          <strong>B.Tech · Electrical Engineering</strong>
-          <span>CGPA 8.75 / 10 · Graduated with distinction</span>
-          <span>Secretary · NSS Cell, NSUT · 2021–22</span>
-          <span>ONGC Merit Scholarship · 2019–20</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section off-field">
-      <div class="section-tag">06 / OFF THE FIELD</div>
-      <div class="off-grid">
-        <div>
-          <h2>CRICKET IS THE<br><em>OTHER HALF OF MY BRAIN.</em></h2>
-        </div>
-        <div class="principles">
-          <div><b>01</b><span>READ THE GAME</span></div>
-          <div><b>02</b><span>PLAY THE SITUATION</span></div>
-          <div><b>03</b><span>STAY AT THE CREASE</span></div>
+        <div class="education">
+          <span class="eyebrow">ACADEMIC INNINGS</span>
+          <strong>8.75 / 10</strong>
+          <p>B.Tech · Electrical Engineering<br>NSUT · 2019–2023</p>
         </div>
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <div class="contact-stadium" aria-hidden="true"></div>
-      <div class="section-tag">07 / NEXT INNINGS</div>
-      <h2>LET'S BUILD<br><em>THE NEXT OVER.</em></h2>
-      <p>Have a backend, distributed systems or AdTech problem worth solving?</p>
-      <a class="contact-email" href="mailto:1110naman@gmail.com">1110naman@gmail.com <span>↗</span></a>
-      <div class="socials">
-        <a href="https://www.linkedin.com/in/1110naman/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-        <a href="https://github.com/1110naman" target="_blank" rel="noreferrer">GitHub ↗</a>
+    <section id="next-innings" class="next-section section">
+      <div>
+        <p class="eyebrow">THE GAME CONTINUES</p>
+        <h2>NEXT INNINGS</h2>
+        <p>Let's build something great together.</p>
       </div>
-      <div class="contact-bottom"><span>न हि ज्ञानेन सदृशं पवित्रमिह विद्यते</span><span>© 2026 NAMAN AGRAWAL</span></div>
+      <a class="cream-btn" href="mailto:1110naman@gmail.com">Connect Now →</a>
     </section>
   </main>
+
+  <footer>
+    <span>© 2026 Naman Agrawal. All rights reserved.</span>
+    <span>PLAY THE LONG GAME <i></i></span>
+  </footer>
 
   <script src="script.js"></script>
 </body>
